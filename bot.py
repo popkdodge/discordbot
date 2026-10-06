@@ -1,7 +1,10 @@
+import os
+
 import discord
 from discord.ext import commands
 
-TOKEN = 'NzQyOTc2OTExNTc5MjgzNDg2.XzN9Kw.GlECebbNj7x-saIqjuTdvouLOdc'
+# The bot token comes from the environment; never commit it.
+TOKEN = os.environ["DISCORD_TOKEN"]
 client = commands.Bot(command_prefix=".")
 
 @client.event
